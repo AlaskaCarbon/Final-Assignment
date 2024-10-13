@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Navigation Page</title>
+    <link rel="stylesheet" href="enhanced_stylesheet.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+        }
+        nav {
+            background-color: #2c3e50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #ecf0f1;
+            text-decoration: none;
+            background-color: #3498db;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="MovingMemeImage.html">Moving Meme Image</a></li>
+            <li><a href="palindromecheck.html">Palindrome Checker</a></li>
+            <li><a href="strings.html">Strings</a></li>
+            <li><a href="stringsplussecret.html">Strings and Secret</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Our Professional Navigation Page</h1>
+    <p>Explore the various sections of our website by using the navigation bar above. Each page contains valuable content designed to enhance your experience.</p>
+	
+	 <p>Below is a table containing useful information about various development boards:</p>
+
+<table border="1">
+        <tr>
+            <th>Board Name</th>
+            <th>Processor</th>
+            <th>Features</th>
+        </tr>
+        <tr>
+            <td>Arduino Uno</td>
+            <td>ATmega328P</td>
+            <td>Digital I/O pins, Analog inputs, USB connection</td>
+        </tr>
+        <tr>
+            <td>Raspberry Pi 4</td>
+            <td>Broadcom BCM2711</td>
+            <td>Quad-core CPU, USB 3.0, Dual monitor support</td>
+        </tr>
+        <tr>
+            <td>BeagleBone Black</td>
+            <td>AM335x 1GHz ARM® Cortex-A8</td>
+            <td>GPIO pins, HDMI output, Ethernet</td>
+        </tr>
+        <tr>
+            <td>ESP32</td>
+            <td>Xtensa Dual-Core 32-bit LX6</td>
+            <td>Wi-Fi, Bluetooth, Low power consumption</td>
+        </tr>
+    </table>
+
+    <!-- Additional helpful or interesting content can be added here -->
+
+    <footer>
+      <p>&nbsp;</p>
+        <p> Joshua Wilson<br>
+          University of Advancing Technology<br>
+          2625 W Baseline Rd<br>
+          Tempe, AZ 85283<br>
+        </p>
+    </footer>
+
+</body>
+</html>

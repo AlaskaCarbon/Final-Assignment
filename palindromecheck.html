@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+
+    <!-- CSS styles all together instead of separate file -->
+    <style>
+        /* Style the body */
+        body {
+            background-color: #e0f7fa; /* Light Cyan background */
+            font-family: 'Arial', sans-serif;
+            text-align: center; /* Center-align text */
+            margin-top: 50px;
+        }
+
+        /* Style the image */
+        img {
+            margin-bottom: 20px;
+            width: 200px;
+            height: auto;
+        }
+
+        /* Style the result div */
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Style the button */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+		    nav {
+            background-color: #2c3e50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #ecf0f1;
+            text-decoration: none;
+            background-color: #3498db;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+	 <nav>
+        <ul>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="MovingMemeImage.html">Moving Meme Image</a></li>
+            <li><a href="palindromecheck.html">Palindrome Checker</a></li>
+            <li><a href="strings.html">Strings</a></li>
+            <li><a href="stringsplussecret.html">Strings and Secret</a></li>
+        </ul>
+    </nav>
+
+    <!-- Palindrome Image -->
+    <img src="palindrome.jpg" alt="Palindrome Image">
+
+    <!-- Div to display messages -->
+    <div id="result">Welcome to the Palindrome Checker!</div>
+
+    <!-- Button to start the palindrome checking process -->
+    <button onclick="startPalindromeChecker()">Start Checking</button>
+
+    <!-- Audio element -->
+    <!-- 'far.mp3' will play when the Start Checking button is clicked -->
+    <audio id="startAudio" src="far.mp3"></audio>
+
+    <!-- JavaScript starts here -->
+    <script>
+        // Get the audio element
+        let startAudio = document.getElementById('startAudio'); // Sound when starting the checker
+
+        // Function to start the palindrome checking process
+        function startPalindromeChecker() {
+            // Play the start audio
+            startAudio.play();
+
+            // Initialize a variable to control the loop
+            let continueChecking = true;
+
+            // Start a loop to keep prompting the user
+            while (continueChecking) {
+                // Prompt the user for input
+                let userInput = prompt("Enter a word or phrase to check if it's a palindrome:");
+
+                // Check if the user clicked 'Cancel' or entered nothing
+                if (userInput === null) {
+                    // User clicked 'Cancel', exit the loop
+                    break;
+                } else if (userInput.trim() === "") {
+                    // User entered an empty string
+                    alert("Please enter a valid word or phrase.");
+                    // Continue to the next iteration of the loop
+                    continue;
+                }
+
+                // Remove spaces and convert to lowercase
+                let processedInput = userInput.replace(/\s+/g, '').toLowerCase();
+
+                // Reverse the processed input
+                let reversedInput = processedInput.split('').reverse().join('');
+
+                // Check if the processed input matches the reversed input
+                if (processedInput === reversedInput) {
+                    // Notify the user that it's a palindrome
+                    alert(`"${userInput}" is a palindrome!`);
+                } else {
+                    // Notify the user that it's not a palindrome
+                    alert(`"${userInput}" is not a palindrome.`);
+                }
+
+                // Ask the user if they want to check another word
+                let userResponse = confirm("Do you want to check another word or phrase?");
+
+                // If the user clicks 'Cancel', set continueChecking to false to exit the loop
+                if (!userResponse) {
+                    continueChecking = false;
+                }
+            }
+
+            // Update the result div with a thank-you message
+            document.getElementById('result').innerText = "Thank you for using the Palindrome Checker!";
+        }
+    </script>
+</body>
+</html>

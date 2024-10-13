@@ -1,0 +1,23 @@
+Since two of the videos were different instructors, I'm just going to include information from both videos. I've been using HTML since 1996 when WebTVs were a thing.
+
+HTML is an acronym for Hypertext Markup Language
+
+HTML makes use of tags in order to structure a document or webpage
+
+Tags for the most part have an opening tag and a closing tag
+
+Header tags, image tags, break tags, paragraph tags,body tags and meta tags are some of the tags used to structure an HTML document
+
+css is used to add style to the HTML document such as text related style as well as general page style
+
+Javascript can be used in an HTML document to make action happen
+
+Javascript is read and executed first, while HTML runs line by line from top to bottom
+
+Images must be referred to by location on drive or folder in order to appear
+
+Images can be reformatted to fit within a given pixel grid with the following context <img id="memeImage" src="logo.png" width="400" height="150">
+
+Things you want to appear within the page when it's viewed with a browser are put between body tags
+
+Header tags have different numbers corresponding to the size of the text

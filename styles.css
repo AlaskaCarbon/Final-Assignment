@@ -1,0 +1,64 @@
+/* Style for the body element */
+body {
+    /* Dark background for a casino ambiance */
+    background-color: #2e2e2e; 
+    /* Text color */
+    color: #ffffff; /* White text color */
+    /* Font family */
+    font-family: Arial, sans-serif; 
+    /* Center-align all text */
+    text-align: center; 
+    /* Padding at the top of the page */
+    padding-top: 50px; 
+    /* Remove default margins */
+    margin: 0; 
+}
+
+/* Style for the main heading */
+h1 {
+    /* Font size of the heading */
+    font-size: 36px; 
+    /* Margin below the heading */
+    margin-bottom: 20px; 
+}
+
+/* Style for the button */
+button {
+    /* Font size of the button text */
+    font-size: 18px; 
+    /* Padding inside the button */
+    padding: 10px 20px; 
+    /* Background color of the button */
+    background-color: #4CAF50; 
+    /* Text color of the button */
+    color: #ffffff; 
+    /* Rounded corners */
+    border-radius: 5px; 
+    /* Removes default border */
+    border: none; 
+    /* Changes cursor to pointer when hovering */
+    cursor: pointer; 
+}
+
+/* Button hover effect */
+button:hover {
+    /* Darker background color on hover */
+    background-color: #45a049; 
+}
+
+/* Style for the dice images */
+.dice {
+    /* Width and height of the dice images */
+    width: 100px; 
+    height: 100px; 
+    /* Margin around the dice images */
+    margin: 10px; 
+
+
+/* Style for the result div */
+#result {
+    /* Font size of the result text */
+    font-size: 24px; 
+    /* Margin above the result text */
+    margin-top: 30px; 
+}
